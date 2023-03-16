@@ -1,3 +1,4 @@
+# Given three numbers X, Y & Z. write a function/method that finds the greatest among the numbers.
 numbers = []
 
 def show_greatest(numbers)
