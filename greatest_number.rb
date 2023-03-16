@@ -1,8 +1,14 @@
 numbers = []
-3.times do
-    puts "Enter number to compare :"
-    number = gets.chomp.to_f
-    numbers.push(number)
+
+def show_greatest(numbers)
+  greatest = numbers.max(1) # returns single maximum value
+  puts "Greatest number among three is #{greatest.first}"
 end
-greatest = numbers.max(1)
-puts "Greatest number among three is #{greatest.first}"
+
+3.times do
+  puts "Enter number to compare :"
+  number = gets.chomp.to_f
+  numbers.push(number)
+end
+
+show_greatest(numbers)
