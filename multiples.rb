@@ -7,7 +7,7 @@ for i in 1..100 do
   numbers.push(i)
 end
 
-numbers.map do |number|
+numbers.each do |number|
   if number % 3 == 0 && number % 5 == 0 then
     puts "FizzBuzz"
   elsif number % 3 == 0 then
