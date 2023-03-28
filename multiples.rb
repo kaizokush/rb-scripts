@@ -8,14 +8,9 @@ for i in 1..100 do
 end
 
 numbers.each do |number|
-  if number % 3 == 0 && number % 5 == 0 then
-    puts "FizzBuzz"
-  elsif number % 3 == 0 then
-    puts "Fizz"
-  elsif number % 5 == 0 then
-    puts "Buzz"
-  else
-    puts number
-  end
+  puts "FizzBuzz" if number % 3 == 0 && number % 5 == 0
+  puts "Fizz" if number % 3 == 0
+  puts "Buzz" if number % 5 == 0
+  puts number
 end
 # puts numbers
