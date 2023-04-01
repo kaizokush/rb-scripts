@@ -4,17 +4,9 @@
 # of both three and five print “FizzBuzz” instead.
 numbers = []
 for i in 1..100 do
-  # numbers.push(i)
   puts "FizzBuzz" if i % 3 == 0 && i % 5 == 0
   puts "Fizz" if i % 3 == 0
   puts "Buzz" if i % 5 == 0
   puts i
 end
 
-# numbers.each do |number|
-#   puts "FizzBuzz" if number % 3 == 0 && number % 5 == 0
-#   puts "Fizz" if number % 3 == 0
-#   puts "Buzz" if number % 5 == 0
-#   puts number
-# end
-# puts numbers
