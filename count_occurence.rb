@@ -8,17 +8,12 @@ sentence = gets.chomp.to_s
 characters = sentence.split("")
 characters.delete(" ") if characters.include?(" ")
 unique_chars = characters.uniq
-counts = Hash.new
 unique_chars.each do |count_letter|
   count = 0
   characters.each do |char|
     if count_letter == char
       count = count + 1 
     end
-  # count = sentence.count(char)
-  counts[count_letter]=count
-end
-end
-counts.each do |key,value| 
-  puts "#{key} : #{value}"
+  end
+puts "#{count_letter} : #{count}"
 end

@@ -21,7 +21,7 @@ c = 3
 def largest(a,b,c)
   return a if a > b && a > c
   return b if b > a && b > c
-  return c if c > a && c > b
+  return c
 end
 
 puts largest(a,b,c)
